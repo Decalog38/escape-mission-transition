@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Mission Transition</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Style pour la grille de mosaïque */
+        .mosaic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .mosaic-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .mosaic-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .mosaic-item:hover img {
+            transform: scale(1.05);
+        }
+        .mosaic-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="padding: 20px">Escape Mission Transition</h1>
+	<div style="padding: 20px">Une belle description</div>
+    <div class="mosaic-grid">
+        <!-- Exemple d'élément de mosaïque -->
+        <div class="mosaic-item">
+            <a href="LaMontagne4Saisons.html">
+                <img src="images/page1.png" alt="Page 1">
+                <div class="caption">La montagne 4 saisons</div>
+            </a>
+        </div>
+        <!-- Ajoutez d'autres éléments de mosaïque ici -->
+        <div class="mosaic-item">
+            <a href="page2.html">
+                <img src="images/page2.png" alt="Page 2">
+                <div class="caption">Page 2</div>
+            </a>
+        </div>
+        <div class="mosaic-item">
+            <a href="page3.html">
+                <img src="images/page3.png" alt="Page 3">
+                <div class="caption">Page 3</div>
+            </a>
+        </div>
+        <!-- Ajoutez autant d'éléments que nécessaire -->
+    </div>
+
+    <!-- Lien vers Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
