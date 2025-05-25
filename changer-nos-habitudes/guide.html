@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changer nos habitudes</title>
+    <title>Changer nos habitudes : Guides</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <style>
         body, html {
@@ -52,9 +52,8 @@
 </head>
 <body>
     <div class="image-container">
-        <img src="../images/ChangerNosHabitudes.png" id="responsive-image">
+        <img src="../images/changer_nos_habitudes_guide.png" id="responsive-image">
         <a href="reponses.html" class="clickable-area" id="area1" title="Réponses"></a>
-        <a href="guide.html" class="clickable-area" id="area2" title="Guide"></a>
     </div>
 
     <script>
@@ -63,17 +62,11 @@
             const imgRect = img.getBoundingClientRect();
 
             const area1 = document.getElementById('area1');
-            const area2 = document.getElementById('area2');
 
             area1.style.top = `${imgRect.top + imgRect.height * 0.8379}px`;
             area1.style.left = `${imgRect.left + imgRect.width * 0.1050}px`;
             area1.style.width = `${imgRect.width * 0.3421}px`;
             area1.style.height = `${imgRect.height * 0.1138}px`;
-
-            area2.style.top = `${imgRect.top + imgRect.height * 0.8379}px`;
-            area2.style.left = `${imgRect.left + imgRect.width * 0.5526}px`;
-            area2.style.width = `${imgRect.width * 0.3421}px`;
-            area2.style.height = `${imgRect.height * 0.1138}px`;
         }
 
         window.addEventListener('resize', updateClickableAreas);
