@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'embolie des arbres</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Lien vers Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+		
+		body {
+            background-image: url('images/fondweb_1.x.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+		.fixed-top-button {
+            z-index: 9999;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 5%;
+			min-height: 5%;
+			max-height: 5%;
+			padding: 0;
+			margin: 0;
+			font-family: 'Rubik', sans-serif;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.fixed-top-button > a {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+		}
+    </style>
+</head>
+<body>
+	<div class="fixed-top-button">
+        <a href="." class="btn-small waves-effect waves-light" style="width: 100%;">
+            <i class="material-icons left">arrow_back</i>Escape Mission Transition
+        </a>
+    </div>
+    <div class="image-container">
+        <img src="images/embolie_arbre.jpg" id="responsive-image">
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
